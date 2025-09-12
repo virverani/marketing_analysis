@@ -7,24 +7,33 @@ Company X is an education center which sells courses on different topics. It run
 The main question is how efficient is the campaign. For that, we calculate the return on ad spend = revenue from course signups divided by the cost of ads. 
 We can also measure click-through-rate and compare it to historical average. This shows how well the ad itself is performing. 
 
-# Dataset
-The dataset is a CSV file with data from Facebook including: 
-Campaign - This is campaign name. 
-,Ad Set,Ad,Impressions,Clicks,CTR (%),CPC (USD),Conversions,Spend (USD)
-
 # Business Glossary 
 Return on ad spend - revenue from signups divided by the cost of the ad. 
 
-# Data model 
-| Column Name | Column Format | Description                                                                      |
-| ----------- | ------------- | -------------------------------------------------------------------------------- |
-| Campaign    | String        | Name of the marketing campaign.                                                  |
-| Ad Set      | String        | Name of the ad set within the campaign.                                          |
-| Ad          | String        | Name or identifier of the individual ad.                                         |
-| Impressions | Integer       | Number of times the ad was displayed to users.                                   |
-| Clicks      | Integer       | Number of times users clicked on the ad.                                         |
-| CTR (%)     | Float         | Click-through rate, calculated as (Clicks ÷ Impressions) × 100.                  |
-| CPC (USD)   | Float         | Cost per click in USD, calculated as Spend ÷ Clicks.                             |
-| Conversions | Integer       | Number of desired actions completed (e.g., course signups) attributed to the ad. |
-| Spend (USD) | Float         | Total amount spent on the ad in USD.                                             |
+# Data model and data glossary
+This dataset includes one table with ads info. 
+
+# Data lineage 
+We take data from Facebook as a CSV file and upload it to Power BI. 
+<img width="540" height="135" alt="image" src="https://github.com/user-attachments/assets/51ce2f7a-a9b1-4846-8b52-7ee3516c5b10" />
+
+
+# Data table description 
+| Source System | Source Column | DWH Column | Column Format | Description
+| ----------- | ------------- | --------------|---------------|------------ |
+| Facebook API  | Campaign     | CampaignName | String   | Name of the marketing campaign.
+
+# Creation of dummy dataset 
+Based on this data table OpenAI created a dummy dataset to be analyzed.
+
+
+
+
+
+
+
+
+
+
+
 
