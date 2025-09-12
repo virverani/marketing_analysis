@@ -26,6 +26,19 @@ We take data from Facebook as a CSV file and upload it to Power BI.
 # Creation of dummy dataset 
 Based on this data table OpenAI created a dummy dataset to be analyzed.
 
+| Column Name | Column Format | Description                                                                      |
+| ----------- | ------------- | -------------------------------------------------------------------------------- |
+| Campaign    | String        | Name of the marketing campaign.                                                  |
+| Ad Set      | String        | Name of the ad set within the campaign.                                          |
+| Ad          | String        | Name or identifier of the individual ad.                                         |
+| Impressions | Integer       | Number of times the ad was displayed to users.                                   |
+| Clicks      | Integer       | Number of times users clicked on the ad.                                         |
+| CTR (%)     | Float         | Click-through rate, calculated as (Clicks ÷ Impressions) × 100.                  |
+| CPC (USD)   | Float         | Cost per click in USD, calculated as Spend ÷ Clicks.                             |
+| Conversions | Integer       | Number of desired actions completed (e.g., course signups) attributed to the ad. |
+| Spend (USD) | Float         | Total amount spent on the ad in USD.                                             |
+
+
 
 
 
