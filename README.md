@@ -39,6 +39,14 @@ Based on this data table OpenAI created a dummy dataset to be analyzed.
 | Spend (USD) | Float         | Total amount spent on the ad in USD.                                             |
 
 
+# Power BI semantic model 
+Power BI semantic model has 3 source tables: 
+1) ads_dummy_dataset which has information coming from Facebook about the ads performance.
+2) ads_paidcustomers table which has information on how many customers ended up paying for the course.
+3) ads_courses has information on the price of the course.
+
+Semantic model in Power BI: 
+<img width="666" height="654" alt="image" src="https://github.com/user-attachments/assets/a5e3bc47-e6eb-4837-ac32-280cfb588f1e" />
 
 
 
