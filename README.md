@@ -61,6 +61,9 @@ Based on this dummy dataset, the best performing ads were:
 
 The difference between ad performance was.....
 
+This report can be used to add more data and ads comparison to monitor the performance over time. You can download the Power BI file for that from this link: 
+
+
 
 
 
