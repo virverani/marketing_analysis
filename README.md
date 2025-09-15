@@ -48,6 +48,14 @@ Power BI semantic model has 3 source tables:
 Semantic model in Power BI: 
 <img width="666" height="654" alt="image" src="https://github.com/user-attachments/assets/a5e3bc47-e6eb-4837-ac32-280cfb588f1e" />
 
+# Analysis results
+We created an ad comparison table which shows.....
+
+Based on this dummy dataset, the Ad 7 perfomormed the best and Ad 4 performed the worst.
+
+<img width="858" height="476" alt="image" src="https://github.com/user-attachments/assets/8d779435-9afd-4f54-867b-d793dec2f47c" />
+
+
 
 
 
