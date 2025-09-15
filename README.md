@@ -56,6 +56,11 @@ Based on this dummy dataset, the Ad 7 perfomormed the best and Ad 4 performed th
 <img width="858" height="476" alt="image" src="https://github.com/user-attachments/assets/8d779435-9afd-4f54-867b-d793dec2f47c" />
 
 
+# Conclusion 
+Based on this dummy dataset, the best performing ads were: 
+
+The difference between ad performance was.....
+
 
 
 
