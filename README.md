@@ -5,29 +5,34 @@ If you have any questions about the project, please reach out by email: ranivirv
 Company X is an education center which sells courses on different topics. It runs Facebook ads to find participants into the courses. The companys marketing team wants to know how well the different ads are performing. 
 
 # Plan 
-The main question is how efficient is the campaign. For that, we calculate the return on ad spend = revenue from course signups divided by the cost of ads. 
+The main question is how efficient is the campaign. For that, we calculate the return on investment = revenue from course signups divided by the cost of ads. 
 We can also measure click-through-rate and compare it to historical average. This shows how well the ad itself is performing. 
 
 # Data
 
 ## Business Glossary 
-Return on ad spend - revenue from signups divided by the cost of the ad. 
+(Only one example is brought, an actual glossary would have all terms described)
+
+Return on investment (ROI) - revenue from signups divided by the cost of the ad. 
 
 ## Data model and data glossary
-This dataset includes one table with ads info. 
+This dataset includes three tables with info on ads performance, courses and number of paid customers from ads.
 
 ## Data lineage 
 We take data from Facebook as a CSV file and upload it to Power BI. 
 <img width="540" height="135" alt="image" src="https://github.com/user-attachments/assets/51ce2f7a-a9b1-4846-8b52-7ee3516c5b10" />
 
 
-## Data table description 
+## Data description
+(Only few examples are brought, an actual data description would have all columns described.)
+
 | Source System | Source Column | DWH Column | Column Format | Description
 | ----------- | ------------- | --------------|---------------|------------ |
 | Facebook API  | Campaign     | CampaignName | String   | Name of the marketing campaign.
+| CSV from marketing team| Course Name     | CourseName | String   | Name of the course.
 
-## Creation of dummy dataset 
-Based on this data table OpenAI created a dummy dataset to be analyzed.
+## Data tables description
+(Only one example is brought, an actual description would include all tables)
 
 | Column Name | Column Format | Description                                                                      |
 | ----------- | ------------- | -------------------------------------------------------------------------------- |
