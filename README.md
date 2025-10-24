@@ -1,33 +1,48 @@
-This project is an example of using PPDAC model for data analysis.
+# This project is an example of using PPDAC model for data analysis.
+
 If you have any questions about the project, please reach out by email: ranivirve@gmail.com 
 
 # Problem 
 Company X is an education center which sells courses on different topics. It runs Facebook ads to find participants into the courses. The companys marketing team wants to know how well the different ads are performing. 
 
 # Plan 
-The main question is how efficient is the campaign. For that, we calculate the return on ad spend = revenue from course signups divided by the cost of ads. 
-We can also measure click-through-rate and compare it to historical average. This shows how well the ad itself is performing. 
+The main question is how efficient is the campaign. For that, we calculate the return on investment = revenue from course signups divided by the cost of ads. 
+We can also measure click-through-rate and compare it to historical average. This shows how well the ad itself is performing.
+For data, a dummy dataset was created with OpenAI. Therefore, no data privacy laws need to be taken into consideration while using the solution.
 
 # Data
 
-## Business Glossary 
-Return on ad spend - revenue from signups divided by the cost of the ad. 
+### Business Glossary 
+(Only one example is brought, an actual glossary would have all terms described)
 
-## Data model and data glossary
-This dataset includes one table with ads info. 
+Return on investment (ROI) - revenue from signups divided by the cost of the ad. 
 
-## Data lineage 
-We take data from Facebook as a CSV file and upload it to Power BI. 
-<img width="540" height="135" alt="image" src="https://github.com/user-attachments/assets/51ce2f7a-a9b1-4846-8b52-7ee3516c5b10" />
+### Data glossary
+(Only few examples are brought, an actual data description would have all columns described.)
 
-
-## Data table description 
 | Source System | Source Column | DWH Column | Column Format | Description
 | ----------- | ------------- | --------------|---------------|------------ |
 | Facebook API  | Campaign     | CampaignName | String   | Name of the marketing campaign.
+| CSV from marketing team| Course Name     | CourseName | String   | Name of the course.
 
-## Creation of dummy dataset 
-Based on this data table OpenAI created a dummy dataset to be analyzed.
+### Data model
+
+This dataset includes three tables with info on ads performance, courses and number of paid customers from ads:
+1) ads_dummy_dataset has information coming from Facebook about the ads performance.
+2) ads_paidcustomers table has information on how many customers ended up paying for the course.
+3) ads_courses has information on the price of the course.
+
+
+<img width="666" height="654" alt="image" src="https://github.com/user-attachments/assets/a5e3bc47-e6eb-4837-ac32-280cfb588f1e" />
+
+
+
+### Data lineage 
+We take data from Facebook as a CSV file and upload it to Power BI. 
+<img width="540" height="135" alt="image" src="https://github.com/user-attachments/assets/51ce2f7a-a9b1-4846-8b52-7ee3516c5b10" />
+
+### Data tables description
+(Only one example is brought, an actual description would include all tables)
 
 | Column Name | Column Format | Description                                                                      |
 | ----------- | ------------- | -------------------------------------------------------------------------------- |
@@ -41,15 +56,6 @@ Based on this data table OpenAI created a dummy dataset to be analyzed.
 | Conversions | Integer       | Number of desired actions completed (e.g., course signups) attributed to the ad. |
 | Spend (USD) | Float         | Total amount spent on the ad in USD.                                             |
 
-
-## Power BI semantic model 
-Power BI semantic model has 3 source tables: 
-1) ads_dummy_dataset which has information coming from Facebook about the ads performance.
-2) ads_paidcustomers table which has information on how many customers ended up paying for the course.
-3) ads_courses has information on the price of the course.
-
-Semantic model in Power BI: 
-<img width="666" height="654" alt="image" src="https://github.com/user-attachments/assets/a5e3bc47-e6eb-4837-ac32-280cfb588f1e" />
 
 # Analysis
 We created an ad comparison table which shows converison rates and return on investment.
