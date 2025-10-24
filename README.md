@@ -23,7 +23,7 @@ Return on investment (ROI) - revenue from signups divided by the cost of the ad.
 | Source System | Source Column | DWH Column | Column Format | Description
 | ----------- | ------------- | --------------|---------------|------------ |
 | Facebook API  | Campaign     | CampaignName | String   | Name of the marketing campaign.
-| CSV from marketing team| Course Name     | CourseName | String   | Name of the course.
+| Excel from marketing team| Course Name     | CourseName | String   | Name of the course.
 
 ### Data model
 
